@@ -49,6 +49,10 @@ docker run -it --rm -p 6080:80 -p 5900:5900 -e VNC_PASSWORD=mypassword ros-deskt
 
 A prompt will ask password either in the browser or vnc viewer.
 
+DEMO
+==================
+![demo_images](screenshots/lxde.png)
+
 License
 ==================
 
