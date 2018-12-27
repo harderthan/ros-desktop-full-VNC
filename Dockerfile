@@ -1,4 +1,4 @@
-FROM ros:latest
+FROM osrf/ros:kinetic-desktop-xenial
 MAINTAINER Daniel <team6612@gmail.com>
 
 ENV DEBIAN_FRONTEND noninteractive

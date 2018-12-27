@@ -14,9 +14,8 @@ if [ -n "$VNC_PASSWORD" ]; then
     export VNC_PASSWORD=
 fi
 
+source "/opt/ros/$ROS_DISTRO/setup.bash"
+
 cd /usr/lib/web && ./run.py > /var/log/web.log 2>&1 &
 nginx -c /etc/nginx/nginx.conf
-exec /bin/tini -- /usr/bin/supervisord -n &
-
-source "/opt/ros/$ROS_DISTRO/setup.bash"
-roscore
+exec /bin/tini -- /usr/bin/supervisord -n
